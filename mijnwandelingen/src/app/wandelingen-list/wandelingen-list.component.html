@@ -1,0 +1,21 @@
+<div class="container">
+  <h2>Klompenpaden</h2>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Datum</th>
+        <th>Naam</th>
+        <th>Stad</th>
+        <th>Afstand</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let wandeling of wandelingen">
+        <td>{{wandeling.datum}}</td>
+        <td>{{wandeling.naam}}</td>
+        <td>{{wandeling.stad}}</td>
+        <td>{{wandeling.afstand}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
